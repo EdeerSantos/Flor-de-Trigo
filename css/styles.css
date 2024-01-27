@@ -1,0 +1,298 @@
+.back__menu {
+    background-color: #f5C11B;
+}
+
+.menu {
+    /*list-style-type: none; Retirado pois já está resetada em reset.css linha 35*/
+    display: flex;
+    max-width: 1350px;
+    margin: 0 auto;
+    height: 15vh;
+    position: relative;
+}
+
+#hamburger {
+    display: none;
+    align-items: center;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+}
+
+#hamburger i {
+    font-size: 32px;
+}
+
+#close__mark {
+    display: none;
+    align-items: center;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+}
+
+#close__mark i {
+    font-size: 36px;
+}
+
+.menu__itens {
+    display: flex;
+    gap: 16px;
+    width: 100%;
+    align-items: center; /* Usa-se essa propriedade quando quer alinhar todos itens dentro do elemento (.menu__itens), verticalmente (eixo X) */
+}
+
+.menu__itens li { /* Adicionei esse elemento para deixar o comportamento do hover no botão inteiro dentro do header. */
+    height: 100%;
+}
+
+.menu__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #4D17D1;
+    height: 100%;
+    padding: 0 25px;
+    /* text-decoration: none; Já está resetado em reset.css, linha 14. */
+    transition: background-color 200ms ease-in-out, color 0.5s ease;
+    font-size: 32px; /* tirei a font-size de .menu para .menu__link para ser mais específico */
+    position: relative;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.menu__link:hover {
+    background-color: #fff;
+}
+
+.menu__link:before {
+    content: "";
+    position: absolute;
+    bottom: -2%;
+    width: 100%;
+    height: 5px;
+    background-color: #fff;
+    opacity: 0; /* Inicialmente oculto */
+    transition: opacity 200ms ease-in-out;
+}
+
+.menu__link:hover:before {
+    opacity: 1;
+}
+
+.menu__img {
+   height: 100%;
+}
+
+.back__descricao {
+    background: #fff;
+}
+
+.main__container {
+    max-width: 1350px;
+    margin: 0 auto;
+}
+
+.main__banner {        
+    display: flex;
+    height: 85vh;
+    justify-content: space-between;  
+    background-image: url("../Img/fotofundo.jpg"); 
+    background-position: center;
+    background-size: cover;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.main__banner-txt {
+    display: flex;
+    align-items: center;
+    padding: 0px 25px;
+    flex: 1 0 0;
+    max-width: 1350px;
+    margin: 0 auto;
+}
+
+.main__banner-txt h1 {    
+    color:#fff; 
+    font-style: bold; 
+    font-size: 50px;  
+}
+
+
+.container__descricao {
+    padding: 160px 25px;
+}
+
+.container__descricao ul {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 32px;
+}
+
+.container__descricao ul li {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 16px;
+    transition: 200ms;
+    box-shadow: 0px 8px 32px 0px rgba(0, 0, 0, 0.25);
+}
+
+.container__descricao ul li:hover {
+    transform: scale(1.08);
+}
+
+.container__descricao ul li a {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    font-size: 32px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #000;
+    max-width: 200px;
+}
+
+.container__descricao ul li a img {
+    width: 200px;
+    height: 200px;
+}
+
+.container__descricao ul li a h2 {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.back__footer {
+    display: flex;
+    background-color: #f5C11B;
+    height: 15vh;
+    padding: 32px 0;
+    align-items: center;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    max-width: 1350px;
+    margin: 0 auto;
+    padding: 0 25px;
+    width: 100%;
+}
+
+.nav-link__links {
+    display: flex;
+    gap: 16px;
+}
+
+.nav-link__links li {
+    padding: 24px 0;
+}
+
+.nav-link__links li a {
+    padding: 8px;
+    font-size: 40px;
+    transition: 150ms ease-in-out;
+}
+
+.nav-link__links li a:hover {
+    background: #fff;
+    border-radius: 10px;
+}
+
+.nav-link__links li a i {
+    color: #4D17D1;
+}
+
+.copyright {
+    display: flex;
+}
+
+.copyright h2 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 13px;
+}
+
+.copyright h2 a {
+    color: #4D17D1;
+    transition: 150ms ease-in-out;
+}
+
+.copyright h2 a:hover {
+    color: #fff;
+}
+
+@media(max-width: 1100px) {
+    .menu__link {
+        font-size: 20px;
+    }
+}
+
+@media(max-width: 750px) {
+    #hamburger {
+        color: #fff;
+        display: flex;
+        position: fixed;
+        top: 6%;
+        left: 25px;
+        transform: translate(-25px -6%);
+        transition: 200ms ease-in-out;
+        background: #000;
+        border-radius: 5px;
+    }
+
+    #hamburger:hover {
+        transform: scale(1.1);
+    }
+
+    .menu {
+        justify-content: center;
+    }
+
+    .menu__itens {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background: #fff;
+        flex-direction: column;
+    }
+    
+    .menu__itens.active {
+        display: flex;
+    }
+
+    .menu__link {
+        font-size: 16px;
+        padding: 0 100px;
+        height: 50%;
+    }
+
+    #close__mark {
+        display: flex;
+        position: fixed;
+        top: 6%;
+        left: 25px;
+        transform: translate(-25px -6%);
+        transition: 100ms ease-in-out;
+    }
+
+    #close__mark:hover {
+        transform: scale(1.1);
+    }
+
+    .container__descricao ul {
+        justify-content: center;
+    }
+
+    .nav-link__links {
+        flex-wrap: wrap;
+    }
+
+    .back__footer {
+        height: 15%;
+    }
+}

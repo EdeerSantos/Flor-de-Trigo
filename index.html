@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>Flor de Trigo</title>
+    <script defer src="./js/script.js"></script>
+</head>
+<body>
+    <header class="back__menu">
+        <nav class="menu">
+            <button id="hamburger">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+            <ul class="menu__itens">
+                <button id="close__mark">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+                <li>    <!-- Retirei a class pois você só colocou uma propriedade nas CSS, porém você pode resetar a "list-style-type: none;" em reset.css, o que vai economizar código. Em reset.css na linha 35, você vê a propriedade resetada. -->
+                    <a class="menu__link" href="#home">Home</a>
+                </li>
+                <li>    <!-- Retirei a class pois você só colocou uma propriedade nas CSS, porém você pode resetar a "list-style-type: none;" em reset.css, o que vai economizar código. Em reset.css na linha 35, você vê a propriedade resetada. -->
+                    <a class="menu__link" href="./about.html">Quem Somos</a>
+                </li>
+                <li>    <!-- Retirei a class pois você só colocou uma propriedade nas CSS, porém você pode resetar a "list-style-type: none;" em reset.css, o que vai economizar código. Em reset.css na linha 35, você vê a propriedade resetada. -->
+                    <a class="menu__link" href="./product.html">Produtos</a>
+                </li> 
+            </ul>
+            <img src="./Img/Logo_sem_fundo.png" alt="logo" class="menu__img"> <!-- Retirei a class pois não está sendo usada nas CSS -->
+        </nav>
+    </header>
+    <main>
+        <div class="main__itens">
+            <div class="main__banner">
+                <div class="main__banner-txt">
+                    <h1>Flor de Trigo 013</h1>
+                </div> <!-- Retirei a class pois você economiza apenas setando as propriedades das css em apenas um elemento (main-banner h1). -->
+            </div>
+            <div class="back__descricao">
+                <div class="main__container">
+                    <div class="container__descricao">
+                        <ul>
+                            <li>
+                                <a href="./product.html"> <!--Mudei de "div" para "a" pois eles, pelo que percebi, eles seriam botões clicaveis certo?-->
+                                    <img src="./Img/marguerita.jpg" alt="pizza-marguerita">
+                                    <h2>Pizzas congeladas</h2>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="./product.html"> <!--Mudei de "div" para "a" pois eles, pelo que percebi, eles seriam botões clicaveis certo?-->
+                                    <img src="./Img/nhoque.jpg" alt="nhoque">
+                                    <h2>Nhoques</h2>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="./product.html"> <!--Mudei de "div" para "a" pois eles, pelo que percebi, eles seriam botões clicaveis certo?-->
+                                    <img src="./Img/rondelli.jpg" alt="Rondelli">
+                                    <h2>Rondellis</h2>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="back__footer">
+        <div class="footer">
+            <nav class="nav__links">
+                <ul class="nav-link__links">
+                    <li>
+                        <a href="#" target="_blank">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank">
+                            <i class="fa-brands fa-youtube"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank">
+                            <i class="fa-brands fa-whatsapp"></i>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="copyright">
+                <h2>© Flor de Trigo 2024. Todos os direitos reservados - <a href="#">Política de privacidade</a> - R. Exemplo de endereço, 000 - 000° Andar. Praia - Santos/SP - Brasil. CEP 00000-000</h2>
+            </div>
+        </div>
+    </footer>
+    <script src="https://Kit.fontawesome.com/eb4273b825.js" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
